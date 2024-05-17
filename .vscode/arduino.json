@@ -1,5 +1,5 @@
 {
-    "sketch": "src/arduino/arduino_code.ino",
+    "sketch": "src/arduino/arduino.ino",
     "board": "arduino:avr:uno",
     "port": "/dev/tty.usbserial-10"
 }
