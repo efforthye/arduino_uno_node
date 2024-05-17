@@ -1,7 +1,7 @@
 import { SerialPort, ReadlineParser } from 'serialport';
 
 const port = new SerialPort({
-  path: '/dev/tty.usbserial-10', // 아두이노가 연결된 포트 경로로 변경
+  path: '/dev/tty.usbserial-10',
   baudRate: 9600,
 });
 

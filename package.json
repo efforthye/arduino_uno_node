@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "arduino": "arduino-cli compile --fqbn arduino:avr:uno src/arduino/arduino.ino && arduino-cli upload -p /dev/tty.usbserial-10 --fqbn arduino:avr:uno src/arduino/arduino.ino",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run arduino && npx tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "",
